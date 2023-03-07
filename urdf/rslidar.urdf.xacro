@@ -93,7 +93,7 @@
   </xacro:macro>
 
   <xacro:macro name="sensor_rslidar_16" params="prefix parent prefix_topic:='lidar_3d' *origin gpu:=false">
-    <xacro:sensor_rslidar prefix="${prefix}" parent="${parent}" prefix_topic="${prefix_topic}" range_min="0.4" range_max="30.0" hfov="180.0" hres="1" vfov="10.0" vres="2.0" fps="20.0" gpu="${gpu}" >
+    <xacro:sensor_rslidar prefix="${prefix}" parent="${parent}" prefix_topic="${prefix_topic}" range_min="0.4" range_max="30.0" hfov="180.0" hres="0.5" vfov="20.0" vres="2.0" fps="20.0" gpu="${gpu}" >
       <xacro:insert_block name="origin" />
     </xacro:sensor_rslidar>
   </xacro:macro>
