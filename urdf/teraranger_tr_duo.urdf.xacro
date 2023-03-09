@@ -37,16 +37,16 @@
       <origin xyz="0.02 0 0.012" rpy="0 0 0"/>
 	</joint>
 
-	<!-- <joint name="${prefix}_laser_joint" type="fixed">
+	<joint name="${prefix}_laser_joint" type="fixed">
       <parent link="${prefix}_base_link"/>
       <child link="${prefix}_laser_link"/>
       <origin xyz="0.02 0 -0.015" rpy="0 0 0"/>
-	</joint> -->
+	</joint>
 
 	<link name="${prefix}_sonar_link">
 	</link>
-	<!-- <link name="${prefix}_laser_link">
-    </link> -->
+	<link name="${prefix}_laser_link">
+    </link>
 	<!-- TODO add Gazebo stuff for simulation-->
 
 	<gazebo reference="${prefix}_sonar_link">
@@ -86,7 +86,7 @@
 		</sensor>
 	</gazebo>
 
-	<!-- <gazebo reference="${prefix}_laser_link">
+	<gazebo reference="${prefix}_laser_link">
 		<material>Gazebo/Yellow</material>
       	<sensor type="ray" name="${prefix}_sensor">
 			<visualize>false</visualize>
@@ -121,6 +121,6 @@
 				<fov>0.25</fov>
 			</plugin>
 		</sensor>
-	</gazebo> -->
+	</gazebo>
   </xacro:macro>
 </robot>
